@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Blinker", sans-serif;
+}
+
+.overflowHide {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.overflowHide::-webkit-scrollbar {
+  display: none;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes changePosition {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, 20px);
+  }
+}
+
+.scroll {
+  animation-duration: 0.9s;
+  animation-name: changePosition;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.header.active {
+  opacity: 1;
+}
+.img-1 {
+  background: url("Assets/images/hero1.png");
+}
+.img-2 {
+  background: url("Assets/images/hero2.png");
+}
+
+@layer components {
+  .bg-grad {
+    @apply bg-gradient-to-b from-[#210044] to-[#FFF];
+  }
+  .title-color {
+    @apply text-[#001619];
+  }
+  .max-width1 {
+    @apply max-w-7xl mx-auto p-4;
+  }
+  .max-width2 {
+    @apply max-w-[2000px] mx-auto;
+  }
+  .text-pry {
+    @apply text-[#7607BD];
+  }
+  .bg-pry {
+    @apply bg-[#7607BD];
+  }
+  .clip {
+    clip-path: polygon(38% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
