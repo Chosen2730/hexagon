@@ -4,6 +4,7 @@ import What from "../Components/HomePage/what";
 import Digital from "../Components/HomePage/digital";
 import Products from "../Components/HomePage/products";
 import Market from "../Components/HomePage/market";
+import Partner from "../Components/HomePage/partner";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Digital />
       <Products />
       <Market />
+      <Partner />
     </div>
   );
 };
