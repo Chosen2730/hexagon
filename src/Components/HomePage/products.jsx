@@ -29,7 +29,7 @@ const Products = () => {
             <div className='bg-white p-8 rounded-md shadow-md h-fit'>
               <img src={anyworkx} className='w-48 mx-auto' alt='logo' />
               <hr className='border-gray-200 -mx-8 my-10 ' />
-              <p className='text-sm font-light'>
+              <p className='font-light'>
                 AnyworkX is set to boost Africa's service economy by creating a
                 huge marketplace with endless possibilities for users . Service
                 providers have the opportunity to earn additional income and
@@ -37,13 +37,13 @@ const Products = () => {
               </p>
             </div>
             <div>
-              <p className='p-4 rounded-md border-[1px] border-gray-400 text-sm font-light'>
+              <p className='p-4 rounded-md border-[1px] border-gray-400 font-light'>
                 Get connected with service providers 24/7 from anywhere you are
               </p>
-              <p className='p-4 rounded-md border-[1px] my-4 border-gray-400 text-sm font-light'>
+              <p className='p-4 rounded-md border-[1px] my-4 border-gray-400 font-light'>
                 Make payment for services rendered through the in-App wallet
               </p>
-              <p className='p-4 rounded-md border-[1px] my-4 border-gray-400 text-sm font-light'>
+              <p className='p-4 rounded-md border-[1px] my-4 border-gray-400 font-light'>
                 Get More Customers Anytime, Anywhere with AnyworkX
               </p>
             </div>
