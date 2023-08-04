@@ -6,7 +6,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Hero = () => {
   const heroImages = [hero1, hero2, hero3];
-  const [activeImgIndex, setActiveImgIndex] = useState(2);
+  const [activeImgIndex, setActiveImgIndex] = useState(0);
   const img = heroImages[activeImgIndex];
   const hero = useRef();
 
