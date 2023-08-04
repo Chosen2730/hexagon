@@ -20,9 +20,9 @@ const Hero = () => {
 
   return (
     <div className='relative z-10' ref={hero}>
-      <img src={img} className='h-screen w-full object-cover' alt='' />
+      <img src={img} className='h-[93vh] w-full object-cover' alt='' />
       <div className='flex items-end justify-end'>
-        <div className='bg-black bg-opacity-50 absolute h-screen top-0 md:w-1/2 sm:clip flex flex-col items-center justify-center'>
+        <div className='bg-black bg-opacity-50 absolute h-[93vh] top-0 md:w-1/2 sm:clip flex flex-col items-center justify-center'>
           <div className='sm:w-3/4 ml-auto p-4 text-white'>
             <h2 className=''>INVESTORS | TECHNOLOGISTS | MENTORS | EXPERTS</h2>
             <p className='font-bold text-3xl my-3'>
