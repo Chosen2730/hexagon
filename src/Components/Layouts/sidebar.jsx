@@ -36,8 +36,8 @@ const Sidebar = ({ isSidebarOpen, closeSidebar, navItems, item }) => {
                 <AiOutlineArrowDown />
               </div>
               <div className={`text-sm transition w-full`}>
-                {item?.subLinks.map(({ heading }, ind) => (
-                  <div key={ind}>
+                {item[ind]?.subLinks.map(({ heading }, ind) => (
+                  <div key={ind} onClick={closeSidebar}>
                     <Link className='my-2 block text-black'>{heading}</Link>
                   </div>
                 ))}

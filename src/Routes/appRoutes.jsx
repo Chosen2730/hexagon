@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "../Pages";
 import HomePage from "../Pages/HomePage";
+import About from "../Pages/About";
 
 const AppRoutes = () => {
   return (
@@ -9,7 +10,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path='/' element={<LandingPage />}>
           <Route index element={<HomePage />} />
-          <Route path='about' element={<h2> About </h2>} />
+          <Route path='about' element={<About />} />
         </Route>
 
         {/* <Route path='/dashboard' element={<h2> Dashboard </h2>}>

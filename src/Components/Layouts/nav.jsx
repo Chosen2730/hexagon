@@ -31,7 +31,7 @@ const Nav = () => {
       title: "The Company",
       text: "Learn more about X-agon as we carry out our mission to enhance and revolutionize the digital landscape in Africa.",
       subLinks: [
-        { img: box, heading: "About X-agon", url: "" },
+        { img: box, heading: "About X-agon", url: "/about" },
         { img: box, heading: "Our People", url: "" },
         { img: box, heading: "Careers", url: "" },
       ],
@@ -78,7 +78,7 @@ const Nav = () => {
             ))}
           </div>
           <RiMenu5Fill
-            className='text-4xl text-pry sm:hidden cursor-pointer'
+            className='text-2xl text-pry sm:hidden cursor-pointer'
             onClick={openSidebar}
           />
         </div>
@@ -88,7 +88,7 @@ const Nav = () => {
           navItems={navLinks}
           navBanner={navBanner}
           isBanerShown={isBanerShown}
-          item={item}
+          item={navBanner}
           navigate={navigate}
           setShownItemIndex={setShownItemIndex}
           setIsBannerShown={setIsBannerShown}
@@ -105,10 +105,16 @@ const Nav = () => {
             <p className='my-2'>{item.text}</p>
           </div>
           <div className='flex gap-4'>
-            {item.subLinks.map(({ img, heading }, ind) => (
+            {item.subLinks.map(({ img, heading, url }, ind) => (
               <div key={ind}>
                 <img className='w-40' src={img} alt={heading} />
-                <Link className='my-5 block'>{heading}</Link>
+                <Link
+                  onClick={() => setIsBannerShown(false)}
+                  to={url}
+                  className='my-5 block'
+                >
+                  {heading}
+                </Link>
               </div>
             ))}
           </div>
