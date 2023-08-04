@@ -30,11 +30,8 @@ const Sidebar = ({ isSidebarOpen, closeSidebar, navItems, item }) => {
       <div className='flex flex-col gap-6 my-10'>
         {navItems.map(({ title }, ind) => {
           return (
-            <>
-              <div
-                className='text-black flex items-center uppercase whitespace-nowrap text-base font-bold gap-4 justify-between'
-                key={ind}
-              >
+            <div key={ind}>
+              <div className='text-black flex items-center uppercase whitespace-nowrap text-base font-bold gap-4 justify-between'>
                 {title}
                 <AiOutlineArrowDown />
               </div>
@@ -46,7 +43,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar, navItems, item }) => {
                 ))}
               </div>
               <hr className='h-2' />
-            </>
+            </div>
           );
         })}
       </div>

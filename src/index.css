@@ -22,9 +22,38 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-/* .productBG {
-  background: rgba(153, 255, 0, 0.12);
-} */
+.hero_slide {
+  height: 93vh;
+  width: 100%;
+  background-image: url(Assets/images/hero1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 3s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(Assets/images/hero1.png);
+  }
+
+  50% {
+    background-image: url(Assets/images/hero2.png);
+  }
+
+  100% {
+    background-image: url(Assets/images/hero3.png);
+  }
+}
 
 @keyframes changePosition {
   from {

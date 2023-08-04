@@ -1,6 +1,7 @@
 import React from "react";
 import Btn from "../../Utils/Button/btn";
 import photo from "../../Assets/images/photo.png";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Partner = () => {
   return (
@@ -16,9 +17,14 @@ const Partner = () => {
             share our vision of a digitally inclusive Africa. Together, we can
             create a more connected and empowered continent.
           </p>
+
           <Btn className={"bg-pry text-white"} text='Get in Touch' />
         </div>
-        <img className='w-full md:w-64 lg:w-[500px]' src={photo} alt='' />
+        <AnimationOnScroll animateIn='animate__zoomIn'>
+          <div className='w-full h-full md:w-64 lg:w-[500px]'>
+            <img className='w-full h-full' src={photo} alt='' />
+          </div>
+        </AnimationOnScroll>
       </div>
     </div>
   );
