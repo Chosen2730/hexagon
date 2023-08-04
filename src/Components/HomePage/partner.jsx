@@ -18,7 +18,7 @@ const Partner = () => {
             create a more connected and empowered continent.
           </p>
 
-          <Btn className={"bg-pry text-white"} text='Get in Touch' />
+          <Btn className={"bg-pry text-white scroll"} text='Get in Touch' />
         </div>
         <AnimationOnScroll animateIn='animate__zoomIn'>
           <div className='w-full h-full md:w-64 lg:w-[500px]'>
