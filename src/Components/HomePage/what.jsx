@@ -16,7 +16,7 @@ const What = () => {
             <FaAsterisk className='text-pry' />
             What we do
           </h2>
-          <p className='text-base md:text-lg my-5'>
+          <p className='text-base md:text-lg my-5 font-light'>
             <span className='text-pry'>
               We are dedicated to revolutionizing the digital landscape in
               Africa by
@@ -30,7 +30,7 @@ const What = () => {
             <FaAsterisk className='text-pry' />
             Whom we do it for
           </h2>
-          <p className='text-base md:text-lg my-5'>
+          <p className='text-base md:text-lg my-5 font-light'>
             <span className='text-pry'>
               Our mission is to bridge the digital divide
             </span>{" "}

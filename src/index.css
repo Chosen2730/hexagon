@@ -22,6 +22,9 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
+/* .productBG {
+  background: rgba(153, 255, 0, 0.12);
+} */
 
 @keyframes changePosition {
   from {
