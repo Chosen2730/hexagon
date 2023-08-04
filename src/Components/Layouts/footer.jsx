@@ -37,7 +37,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='bg-pry text-white p-3 py-20'>
+    <footer className='bg-pry text-white p-4 py-20'>
       <div className='mx-auto container grid grid-cols-1  md:grid-cols-2 gap-8'>
         <div className='grid grid-cols-2 gap-4'>
           <div className='flex flex-col gap-4'>
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             <div>
               <h2 className='font-bold'>Social Links</h2>
-              <div className='flex gap-3 my-1'>
+              <div className='flex gap-4 my-1'>
                 {social?.map(({ img, url }, ind3) => (
                   <a href={url} key={ind3} target='__blank' className=''>
                     <img src={img} className='w-5 h-5' alt='social' />

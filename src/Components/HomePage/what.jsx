@@ -10,7 +10,7 @@ const What = () => {
       >
         <AiOutlineArrowUp className='w-12 md:w-16 h-12 md:h-16 p-2 bg-pry text-white rounded-full' />
       </div>
-      <div className='container mx-auto p-3 grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[50vh] items-center'>
+      <div className='container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[50vh] items-center'>
         <div>
           <h2 className='flex items-center uppercase gap-5 text-xl'>
             <FaAsterisk className='text-pry' />

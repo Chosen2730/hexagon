@@ -4,7 +4,7 @@ import Btn from "../../Utils/Button/btn";
 
 const Digital = () => {
   return (
-    <div className='bg-pry p-3 py-20'>
+    <div className='bg-pry p-4 py-20'>
       <div className='container mx-auto text-white'>
         <h2 className='text-2xl font-bold'>Innovative Digital Solutions</h2>
         <p className='text-base my-2 font-light'>
@@ -18,15 +18,15 @@ const Digital = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
           <div>
             <img src={box} className='w-full' alt='box' />
-            <h2 className='uppercase bg-gray-700 p-3 text-sm'>Blockchain</h2>
+            <h2 className='uppercase bg-gray-700 p-4 text-sm'>Blockchain</h2>
           </div>
           <div>
             <img src={box} className='w-full' alt='box' />
-            <h2 className='uppercase bg-gray-700 p-3 text-sm'>Blockchain</h2>
+            <h2 className='uppercase bg-gray-700 p-4 text-sm'>Blockchain</h2>
           </div>
           <div>
             <img src={box} className='w-full' alt='box' />
-            <h2 className='uppercase bg-gray-700 p-3 text-sm'>Blockchain</h2>
+            <h2 className='uppercase bg-gray-700 p-4 text-sm'>Blockchain</h2>
           </div>
 
           <div>
