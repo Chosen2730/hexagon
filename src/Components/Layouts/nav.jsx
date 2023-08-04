@@ -32,7 +32,7 @@ const Nav = () => {
       text: "Learn more about X-agon as we carry out our mission to enhance and revolutionize the digital landscape in Africa.",
       subLinks: [
         { img: box, heading: "About X-agon", url: "/about" },
-        { img: box, heading: "Our People", url: "" },
+        { img: box, heading: "Our People", url: "/our-people" },
         { img: box, heading: "Careers", url: "" },
       ],
     },
@@ -40,7 +40,7 @@ const Nav = () => {
       title: "Our Products",
       text: "We are continuously building solutions that empower individuals and businesses to thrive in the digital era",
       subLinks: [
-        { img: box, heading: "AnyWorkx", url: "" },
+        { img: box, heading: "AnyWorkx", url: "/anyworkx" },
         { img: box, heading: "Whom we serve", url: "" },
       ],
     },
@@ -61,7 +61,9 @@ const Nav = () => {
       <nav className='w-full border-b px-3 z-50 bg-white relative'>
         <div className='flex justify-between items-center gap-4 container mx-auto'>
           <div className='flex items-center gap-8'>
-            <img className='w-28 md:w-[200px]' src={logo} alt='' />
+            <Link to='/'>
+              <img className='w-28 md:w-[200px]' src={logo} alt='' />
+            </Link>
             <img className='w-10 md:w-12' src={line} alt='' />
           </div>
 
