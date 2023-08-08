@@ -20,7 +20,6 @@ const Hero = () => {
 
   return (
     <div className='relative z-10 hero_slide' ref={hero}>
-      {/* <img src={img} className='h-[93vh] w-full object-cover' alt='' /> */}
       <div className='flex items-end justify-end'>
         <div className='bg-black bg-opacity-50 absolute h-[93vh] top-0 md:w-1/2 sm:clip flex flex-col items-center justify-center'>
           <div className='sm:w-3/4 ml-auto p-4 text-white'>
