@@ -26,7 +26,7 @@ const Hero = () => {
           <div className='sm:w-3/4 ml-auto p-4 text-white'>
             <h2 className=''>INVESTORS | TECHNOLOGISTS | MENTORS | EXPERTS</h2>
             <p className='font-bold text-3xl my-3'>
-              A solition development company with focus on using Information
+              A solution development company with focus on using Information
               Technology to provide solutions
             </p>
           </div>
