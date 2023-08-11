@@ -44,7 +44,7 @@ const Footer = () => {
             <div>
               <h2 className='font-bold'>Address</h2>
               <p className='text-xs my-1'>
-                Plot 1390, Tiamiyu Savage St, Victoria Island, Lagos.
+                Plot 1391, Tiamiyu Savage St, Victoria Island, Lagos.
               </p>
             </div>
             <div>
@@ -68,7 +68,7 @@ const Footer = () => {
             <div>
               <h2 className='font-bold'>Customer care number</h2>
               <a href='tel:+234(0)7000099999 ' className='text-xs my-1'>
-                +234 (0) 700 009 9999
+                +234 915 137 7777
               </a>
             </div>
             <div>
