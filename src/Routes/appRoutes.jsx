@@ -7,27 +7,23 @@ import People from "../Pages/people";
 import Anyworkx from "../Pages/Anyworkx";
 
 const AppRoutes = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<LandingPage />}>
-          <Route index element={<HomePage />} />
-          <Route path='about' element={<About />} />
-          <Route path='our-people' element={<People />} />
-          <Route path='anyworkx' element={<Anyworkx />} />
-        </Route>
+	return (
+		<Router>
+			<Routes>
+				{/* <Route path='/' element={<LandingPage />}>
+					<Route index element={<HomePage />} />
+					<Route path='about' element={<About />} />
+					<Route path='our-people' element={<People />} />
+					<Route path='anyworkx' element={<Anyworkx />} />
+				</Route> */}
 
-        {/* <Route path='/dashboard' element={<h2> Dashboard </h2>}>
-          <Route index element={<h2> DashboardHome </h2>} />
-        </Route> */}
-
-        <Route path='*' element={<h2>404</h2>} />
-      </Routes>
-    </Router>
-  );
+				<Route path='*' element={<h2>404</h2>} />
+			</Routes>
+		</Router>
+	);
 };
 
 export default AppRoutes;
 {
-  /* <Route path='track/:trackID/' element={<Track />} /> */
+	/* <Route path='track/:trackID/' element={<Track />} /> */
 }
